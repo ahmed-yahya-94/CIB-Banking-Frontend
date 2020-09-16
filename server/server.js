@@ -23,9 +23,9 @@ app.listen(port, () => {
   console.log('Node started on port ' + port);
 });
 // start server port
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 3031
 
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 
  
 
