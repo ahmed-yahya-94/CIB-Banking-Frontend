@@ -105,8 +105,8 @@ function data_load1(){
         var url="https://apic-gw-gateway-cp4i.apps.cp4i.local/egyptorg/sandbox/bank/balance?username=";
         xhr.open('GET', url.concat(vars.a), true);
         // alert(url.concat(name));
-        xhr.setRequestHeader('x-ibm-client-id','cebf0eeadde32d9a54fc4674ca95d675');
-        xhr.setRequestHeader('x-ibm-client-secret','8d5c8b9ce2c0054c7e2dccc66bf38b0e');
+        xhr.setRequestHeader('x-ibm-client-id','a0a821a1d58569324e20e26d6c54a252');
+        xhr.setRequestHeader('x-ibm-client-secret','3e1289fcb5222f224e5e04d5e617cc2e');
         xhr.send();
         xhr.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -139,8 +139,8 @@ function data_load1(){
           var amount = accNumber.concat("&amount="+amountorg);
           xhr.open('GET', amount, true);
           alert("Transfer completed successfully");
-          xhr.setRequestHeader('x-ibm-client-id','cebf0eeadde32d9a54fc4674ca95d675');
-          xhr.setRequestHeader('x-ibm-client-secret','8d5c8b9ce2c0054c7e2dccc66bf38b0e');
+          xhr.setRequestHeader('x-ibm-client-id','a0a821a1d58569324e20e26d6c54a252');
+          xhr.setRequestHeader('x-ibm-client-secret','3e1289fcb5222f224e5e04d5e617cc2e');
           xhr.send();
           // var str = 'https://api.eu-gb.apiconnect.appdomain.cloud/nardinebebawiibmcom-dev/sb/api/transfer?username=&accountNumber=&amount=';
            xhr.onreadystatechange = function() {
